@@ -1,103 +1,172 @@
-@media only screen and (max-width: 767px) {
-    #header {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-        min-width: 100%;
-    }
-    .header__container {
-        max-width: 767px;
-        margin: 0px;
-    }
-    .header__logo {
-        font-family: 'Shrikhand', sans-serif;
-        font-size: 30px;
-        left: 10px;
-        width: 100%;
-        box-shadow: 0 1px 4px #1f1d1d;
-    }
-    a {
-        text-decoration: none;
-        color: black;
-    }
-    .header__map-marker-icone {
-        display: flex;
-        justify-content: center;
-        min-width: 100%;
-        background-color: #EEE;
-    }
-    .header__text {
-        font-family: 'Roboto', sans-serif;
-    }
-    .header__detail {
-        padding: 30px 10px;
-        background: #f6f6f6;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        text-align: center;
-    }
-    .header__texth2 {
-        font-family: 'Roboto';
-        font-size: 30px;
-    }
-    .header__texth3 {
-        font-family: 'Roboto', sans-serif;
-        font-size: 18px;
-    }
-    .header__detail__btn {
-        background: linear-gradient(#FF79DA, #9356DC);
-        color: white;
-        border: none;
-        width: 55%;
-        padding: 15px 0px;
-        cursor: pointer;
-        border-radius: 30px;
-        font-size: 16px;
-        text-decoration: none;
-    }
-    .header__detail__btn:hover {
-        background: linear-gradient(#f77dd4, #ab65fa);
-    }
-    .navigation {
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-    }
-    h2 {
-        font-family: 'Roboto', sans-serif;
-        font-size: 26px;
-    }
-    p {
-        font-family: 'Roboto', sans-serif;
-    }
-    .navigation__title {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 20px 0;
-        margin-top: 20px;
-        margin-right: 0px;
-        margin-bottom: 20px;
-        margin-left: 0px;
-    }
-    .navigation__link {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        cursor: pointer;
-        background: #f6f6f6;
-        border-radius: 20px;
-        margin: 20px;
-        height: 60px;
-    }
-    .navigation__link--number {
-        color: #ffffff;
-        background-color: #9356dc;
-        padding: 05px 10px;
-        border-radius: 30px;
-        margin-left: -20px;
-    }
-}
+ @media screen and (max-width: 767px) {
+     body {
+         font-family: 'Roboto';
+     }
+     #header {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         align-content: center;
+         min-width: 100%;
+     }
+     .header__container {
+         max-width: 767px;
+         margin: 0px;
+     }
+     .header__logo {
+         font-family: 'Shrikhand', sans-serif;
+         font-size: 30px;
+         left: 10px;
+         width: 100%;
+         box-shadow: 0 1px 4px #1f1d1d;
+     }
+     a {
+         text-decoration: none;
+         color: black;
+     }
+     .header__map-marker-icone {
+         display: flex;
+         justify-content: center;
+         min-width: 100%;
+         background-color: #EEE;
+     }
+     .header__text {
+         font-family: 'Roboto', sans-serif;
+     }
+     .header__detail {
+         padding: 30px 10px;
+         background: #f6f6f6;
+         display: flex;
+         align-items: center;
+         flex-direction: column;
+         text-align: center;
+     }
+     .header__texth2 {
+         font-family: 'Roboto';
+         font-size: 30px;
+     }
+     .header__texth3 {
+         font-family: 'Roboto', sans-serif;
+         font-size: 18px;
+     }
+     .header__detail__btn {
+         background: linear-gradient(#FF79DA, #9356DC);
+         color: white;
+         border: none;
+         width: 55%;
+         padding: 15px 0px;
+         cursor: pointer;
+         border-radius: 30px;
+         font-size: 16px;
+         text-decoration: none;
+     }
+     .header__detail__btn:hover {
+         background: linear-gradient(#f77dd4, #ab65fa);
+     }
+     .navigation {
+         display: flex;
+         flex-direction: column;
+         align-content: center;
+     }
+     h2 {
+         font-family: 'Roboto', sans-serif;
+         font-size: 26px;
+     }
+     p {
+         font-family: 'Roboto', sans-serif;
+     }
+     .navigation__title {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         margin: 20px 0;
+         margin-top: 20px;
+         /*margin-right: 0px;*/
+         margin-bottom: 20px;
+         /*margin-left: 0px;*/
+         color: black;
+     }
+     .navigation__link {
+         display: flex;
+         justify-content: space-around;
+         align-items: center;
+         cursor: pointer;
+         background: #f6f6f6;
+         border-radius: 20px;
+         margin: 20px;
+         padding: 5px 5px 5px 5px;
+         height: 60px;
+         width: 90%;
+         box-shadow: 0 5px 15px 0 #c3c3c3;
+     }
+     .navigation__link--number {
+         color: #ffffff;
+         background-color: #9356dc;
+         padding: 05px 10px;
+         border-radius: 30px;
+         margin-left: -43px;
+     }
+     .fas {
+         color: gray;
+         display: flex;
+         justify-content: flex-start;
+     }
+     p {
+         color: black;
+     }
+     .restaurants {
+         display: flex;
+         flex-direction: column;
+         padding-left: 20px;
+         padding-bottom: 20px;
+         background-color: #f6f6f6;
+     }
+     .restaurants__title {
+         font-size: 26px;
+     }
+     .vignette {
+         width: 90%;
+         background: white;
+         margin: 5px;
+         border-radius: 20px;
+         box-shadow: 0 5px 15px 0 #c3c3c3;
+     }
+     .vignette__image {
+         width: 100%;
+         border-radius: 20px 20px 0 0;
+         height: 170px;
+     }
+     .vignette__image--nouveau {
+         display: flex;
+         justify-content: flex-end;
+         align-items: space-around;
+         color: #008766;
+         background-color: #99e2d0;
+     }
+     /*.vignette__icone::before {
+         color: white;
+     }*/
+     .footer {
+         background-color: #353535;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         color: #FFFFFF;
+     }
+     .footer__title {
+         font-family: 'Shrikhand', sans-serif;
+         font-size: 30px;
+     }
+     .footer__items {
+         display: flex;
+         flex-direction: column;
+         color: white;
+     }
+     ul {
+         list-style-type: none;
+     }
+     .footer__link {
+         color: white;
+     }
+ }
