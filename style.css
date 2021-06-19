@@ -236,6 +236,42 @@ input[type=text]:focus {
     left: 0;
     top: 0;
     background-color: rgba(255, 255, 255, 0.9);
+    -webkit-animation: loader 0.01s;
+    animation: loader 0.01s;
+    -webkit-animation-delay: 3s;
+    animation-delay: 3s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    z-index: 10000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: conic-gradient(#FF79DA, #9356dc);
+    -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 8px), #000 0);
+    animation: spin 1.5s infinite linear;
+    -webkit-animation: spin 1.5s infinite linear;
+}
+
+
+/*.loading {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.9);
     animation: loader 0.01s;
     animation-delay: 3s;
     animation-fill-mode: both;
@@ -251,7 +287,7 @@ input[type=text]:focus {
     border-radius: 50%;
     background: conic-gradient(#FF79DA, #9356dc);
     animation: spin 1.5s infinite linear;
-}
+}*/
 
 .working {
     padding-left: 20px;
@@ -674,7 +710,7 @@ footer .far {
     animation: plate-choice 6s;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
     .steps-list {
         flex-direction: row;
     }
@@ -704,5 +740,8 @@ footer .far {
     .menu-content {
         flex-direction: row;
         flex-wrap: wrap;
+    }
+    .menu-container {
+        flex-direction: row;
     }
 }
